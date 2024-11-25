@@ -17,6 +17,10 @@ In the [Interpret and Transform Notebook](./02_interpret_transform.ipynb) notebo
 - handle date and time information
 - format the data for consistency
 
+3. Remove casualty number
+
+For the scenario I aim to solve, it is unlikely that we would have concrete information about the casualty number so I remove this from the data.
+
 ## Background on data
 
 The UK Department of Transport publishes road accident/collision and safety statistics. This data is for Great Britain only (i.e. it includes data for England, Scotland and Wales but does not data for include Northern Ireland).
