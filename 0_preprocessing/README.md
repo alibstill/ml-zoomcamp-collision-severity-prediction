@@ -4,14 +4,18 @@ The final dataset I used to train the models for this project is based on a real
 
 In this section I outline this journey of refining the dataset. 
 
-1. Drop columns: choose which columns to keep/ 
+1. Drop columns: choose which columns to keep/
 
-In [Dropping Columns Notebook](./01_dropping_columns.ipynb), I outline why I decided not to use some of the columns.
+In the [Drop Columns Notebook](./01_dropping_columns.ipynb), I remove columns I don't want to use and outline why I decided not to use them.
 
-2. Interpret and transform data
+2. Interpret, filter and transform data
 
-TODO
-
+In the [Interpret and Transform Notebook](./02_interpret_transform.ipynb) notebook I carry out some additional refinement:
+- transform the categorical variables into readable strings 
+- filter the data to include only those datapoints that have been collected by police officers who attended the scene of the road accident
+- create the target variable `is_severe` from the `accident_severity` column
+- handle date and time information
+- format the data for consistency
 
 ## Background on data
 
