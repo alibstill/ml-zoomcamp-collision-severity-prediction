@@ -18,6 +18,8 @@ In this notebook, I look at some of the distributions of certain features.
 
 See [second notebook](02_eda_distributions.ipynb)
 
-3. Stage 3: EDA and Feature Importance
+3. Stage 3: EDA and Feature Importance and save final version of data
 
 In [this notebook](./02_eda_feature_importance.ipynb) I provide a detailed description of the columns and evaluate feature importance.
+
+I also save the final cleaned collisions dataset to several other locations for use.
