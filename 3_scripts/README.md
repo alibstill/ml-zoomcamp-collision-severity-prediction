@@ -13,7 +13,7 @@ conda activate collision_severity
 ## Train xgboost 
 The `train_xgboost` script trains and validates an XGBoost model against our dataset and then saves it to the local folder directory i.e. [3_scripts/data](./data/).
 
-To recreate my final model model i.e. use the parameters that I found produced the best predictive results, run the following **within this directory**
+To recreate my final model with the parameters that I found produced the best predictive results, run the following **within this directory**
 
 ```bash
 python train_xgboost.py
@@ -61,11 +61,7 @@ python train_xgboost.py --max_depth=4 --min_child_weight=5 --num_boost_round=43 
 ## Predict
 You can use the predict script to make a prediction with the model.
 
-The script loads the model and DictVectorizer that we saved in the `train_xgboost.py` script.
-
-Since the input is quite a long JSON, I have set up the script so it reads the input from a json file. 
-
-The following command reads the `collision_severity_model_md=5_msf=5_nestimators=130.bin` model file (the file that contains our tuned model) and uses `08_collision_example_request.json` as the input file
+If you run the script without any arguments, it will load my final model (i.e. [collision_severity_model_md=5_msf=5_nestimators=130.bin](./data/collision_severity_model_eta=0.3_md=4_mcw=5_nboost=43.bin)) and use [collision_example_request.json](./data/collision_example_request.json) as input.
 
 ```bash
 python predict.py # from this directory
@@ -74,7 +70,7 @@ python 3_scripts/predict.py # from root folder
 
 **validation**
 
-Note that I have not done any indepth validation. In particular, I have not validated the input json. It is up to the user to choose suitable values.
+Note that I have not done any validation for these scripts. In particular, I have not validated the input json. It is up to the user to choose suitable values.
 
 **help**
 
@@ -83,9 +79,11 @@ python predict.py -h
 ```
 
 ### Parameterization (optional)
-It is possible to pass in the filepath to a new input file and new model file. 
+The following parameters can be passed into the script:
+- model_filepath: filepath to another model file
+- input_filepath: filepath to a new input json file
 
-It might be simpler however just to modify the example request manually.
+If you want to experiment with different input values, it is simpler to manually modify the [collision_example_request.json](./data/collision_example_request.json) that the script uses by default.
 
 ```bash
 python predict.py --input_filepath=./data/collision_example_request.json --model_filepath=./data/collision_severity_model_eta=0.3_md=4_mcw=5_nboost=43.bin

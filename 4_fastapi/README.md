@@ -18,7 +18,7 @@ uvicorn collision_severity_prediction_service.api:app --host 0.0.0.0 --port 8060
 ## Making a request
 After getting the app running, navigate to `http://localhost:8060/docs` to view the API documentation and experiment with the API directly.
 
-You will find an example request ready to for experimentation. The endpoint has validation and will tell you if you enter anything invalid. In these validation errors, you are also given example valid values.
+You will find an example request ready for experimentation. The endpoint has validation and will tell you if you enter anything invalid. In these validation errors you are also given a list of valid values.
 
 
 
