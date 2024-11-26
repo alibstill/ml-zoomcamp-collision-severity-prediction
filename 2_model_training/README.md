@@ -14,8 +14,8 @@ All of the models had very similar ROC AUC scores after tuning. The results sugg
 | Model               | Final auc_score |
 | ------------------- | --------------- |
 | Logistic Regression | 0.614           |
-| Random Forest       | 0.628           |
-| XGBoost             | 0.628           |
+| Random Forest       | 0.622           |
+| XGBoost             | 0.629           |
 
 ## Evaluation and next steps
 Our ROC AUC scores are disappointing but not necessarily 
