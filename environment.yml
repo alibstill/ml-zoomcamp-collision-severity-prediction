@@ -1,0 +1,13 @@
+name: collision_severity
+
+dependencies:
+  - jupyter
+  - ipykernel
+  - matplotlib==3.9.2
+  - openpyxl==3.1.5
+  - pandas==2.2.3
+  - py-xgboost==2.1.2
+  - python==3.13.0
+  - scikit-learn=1.5.2
+  - seaborn==0.13.2
+

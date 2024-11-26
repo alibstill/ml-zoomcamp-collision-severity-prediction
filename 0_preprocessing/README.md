@@ -1,14 +1,18 @@
 # Preprocessing
 
-The final dataset I used to train the models for this project is based on a real Road Safety dataset. I have changed the original dataset quite substantially so that I can build a model to predict the severity of road traffic collision. (Collision and accident are used interchangeably) 
+The final dataset I used to train the models for this project is based on a real Road Safety dataset. I have changed the original dataset quite substantially so that I can build a model to predict the severity of a road traffic collision.
 
-In this section I outline this journey of refining the dataset. 
+In this section I outline this journey of refining the dataset. This achieved across three notebooks. 
 
-1. Drop columns: choose which columns to keep/
+I have used three notebooks instead of one to make the process more digestable. Each notebook produces an interim file `collisions{number}.csv` stored in the `data` folder. The interim file acts as the input to the next stage of processing.
+
+1. Stage 1: Drop columns
 
 In the [Drop Columns Notebook](./01_dropping_columns.ipynb), I remove columns I don't want to use and outline why I decided not to use them.
 
-2. Interpret, filter and transform data
+Produces: `collisions1.csv`
+
+2. Stage 2: Interpret, filter and transform data
 
 In the [Interpret and Transform Notebook](./02_interpret_transform.ipynb) notebook I carry out some additional refinement:
 - transform the categorical variables into readable strings 
@@ -17,9 +21,15 @@ In the [Interpret and Transform Notebook](./02_interpret_transform.ipynb) notebo
 - handle date and time information
 - format the data for consistency
 
-3. Remove casualty number
+Produces: `collisions2.csv`
+
+3. Stage 3: Make the data fit our imaginary problem
+
+The casualty number refers to the number of casualties in the accident. This was a potential target variable. Rather than predict how many people were injured, I decided to predict how severe the collision was.
 
 For the scenario I aim to solve, it is unlikely that we would have concrete information about the casualty number so I remove this from the data.
+
+Produces: `collisions3.csv`
 
 ## Background on data
 
