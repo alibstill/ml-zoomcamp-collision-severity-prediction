@@ -1,0 +1,20 @@
+{
+    "police_force": "police_scotland",
+    "number_of_vehicles": 1,
+    "day_of_week": "sunday",
+    "time": "05:00",
+    "first_road_class": "unclassified",
+    "road_type": "slip_road",
+    "speed_limit": 20,
+    "light_conditions": "darkness___no_lighting",
+    "weather_conditions": "snowing__high_winds",
+    "road_surface_conditions": "wet_or_damp",
+    "month": "february",
+    "day_of_year": 32,
+    "is_trunk": 0,
+    "is_near_pedestrian_crossing": 0,
+    "is_urban": 1,
+    "has_special_conditions_at_site": 1,
+    "is_carriageway_hazard": 1,
+    "is_near_junction": 1
+}
