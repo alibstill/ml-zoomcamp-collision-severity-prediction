@@ -32,6 +32,10 @@ Most of the sections contain Jupyter notebooks. To setup the local jupyter envir
 
 ## The final app
 
+### Demo
+
+![Demo collision severity api](https://vimeo.com/1033873590/0543077643?ts=0)
+
 ### Running the final app
 
 There are several ways to run the final app. 
