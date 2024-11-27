@@ -1,0 +1,7 @@
+services:
+  collision_severity:
+    build: .
+    container_name: collision_severity
+    ports:
+      - "8060:8060"  
+    restart: always
