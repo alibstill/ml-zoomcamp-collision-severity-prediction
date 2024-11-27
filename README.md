@@ -34,7 +34,7 @@ Most of the sections contain Jupyter notebooks. To setup the local jupyter envir
 
 ### Demo
 
-[![Demo collision severity api](https://i.vimeocdn.com/video/1033873590/0543077643.jpg)](https://vimeo.com/1033873590/0543077643?ts=0)
+[Watch the demo](https://vimeo.com/1033873590/0543077643?ts=0)
 
 
 ### Running the final app
